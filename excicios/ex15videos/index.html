@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>videos em HTML</title>
+</head>
+<body>
+    <h1>inserindo vídeos hospedados localmente</h1>
+    <p>este video está hospedado em meu propeio servidor</p>
+    <!--video): para inserir video
+    (width="..."): para diminuir o tamanho da imagen no site   
+     (controls): serve para mostrar a opção de play no vide-->
+
+    <p>
+        <video src="midia/videohtml.mp4" width="200" controls loop></video>
+        <video src="midia/Vídeos em hospedagem própria - @Curso em Vídeo HTML5 e CSS3_720P HD.mp4" width="300" controls></video>
+
+        <!-- tem algums navegadores que não são compativei com o formato de do video então use-se o paramntro
+        <video controls>
+            (souece src"misia/meu-video.mp4" type="video/mp4)
+        e assim vai colocando o fromato de video que voce tem, a ordem é importante, quando o navegado rdar o site, se o video for compativel ele deixa mas s não for ele pula para o outro formato de video para ver se ppega,-->
+
+        <!-- (poster="imagens...")serva para dar uma imagen inicial ao seu video, podendo ser qual quer foto-->
+
+        <video width="200" poster="imagens/20181230_171531.jpg" controls autoplay loop>
+            <source src="midia/videohtml.mp4" type="video/mp4"> 
+            <source src="midia/Vídeos em hospedagem própria - @Curso em Vídeo HTML5 e CSS3_720P HD.mp4" type="vido/ogg">
+            <source src="midia/videohtml.mp4" type="video/webm">
+
+
+        </video>
+
+        se usar a tag vido vai ter um alto custo para seu cliente.
+
+
+
+    </p>
+
+    <h1>inserindo video do you tube</h1>
+
+    <!-- inserir video do you tube é bem mais pratico 
+    para isso é só ir no video que vc quer no you tube, clicar na opção compartilhar, imcoporar, copiar, e colocar no seu codigo html -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/eF9Qoc6p_4Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+     
+
+
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>imagens dinamicas </h1>
+    <p>tente abrir esse site em varios dispositivos diferente ou simplismente aulmente ou diminua o tamnho do seu navegador </p>
+
+    <!-- (picture): tag para por imegn no seu site, mas se a imagen for muito grande ou muito pequena teremos a tag (source media-type) essa tag vai fazer com aja a sucessão de imagens, sempre do maior para o menor 
+        como no exemplo a baixo a foto grande de 1000px ta em baixo, logo em sima a foto media  de 700px, e logo em sima dessa ta a foto pequena de 300px: -->
+
+<!--é bom sempre quando for definir o tamaho que o site vai mudar de imagen no (midia="max-width: xpx"): colocar 50 px a mais para esconder a barra de rolagen-->
+
+
+
+     <picture>
+         <source media="(max-width: 750px)" srcset="imagens/fotop.png" type="image/png">
+         <source media="(max-width: 1050px)" srcset="imagens/fotom.png" type="image/png">
+         <img src="imagens/fotog.png" alt="imagnes flexíveis">
+     </picture>
+
+
+
+
+
+</body>
+</html>

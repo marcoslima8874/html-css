@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Reproduzindo audio</h1>
+<!--tem 2 tipos de botar um audio num site um deles é o parametro que se pode observar a baixo
+para isso é bom ter varios formatos de audio, não só tendo o mp3, (MP3, WAV, OGG) -->
+
+<!-- a segunda maneira é a utilização de (source-src-type): não de imagens mas sim o de audio -->
+
+<!--(midia type): tem varios tipos de midia type para cada função, o de audio por exemplo é (type="audio/mpeg")-->
+
+    <p>vamos aprender a reproduzir audios em HTML5</p>
+  
+
+    <!--  <audio src="midia/infantil.mp3.mp3" controls autoplay></audio>-->
+
+    <!--(autoplay): vai dar o play sozinho 
+    (controls): vai mostrar a opção de botar play manual um botãozinho
+    (loop): vai recomessar apos o adio terminar
+    tudas essas insformações a sima tem que ficar dentro dos parametros (<audio...>)-->
+
+
+    <audio preload="metadata" autoplay> 
+
+<source src="midia/infantil.mp3.mp3" type="audio/mp3">
+<source src="midia/talibam.mp3.ogg" type="audio/ogg">
+<source src="midia/talibam.mp3.wav" type="audio/wav">
+
+    </audio>
+<!--se caso nem um tipo de audio carregar pode mandar ele baixar o arquivvo-->
+    <p>infelismete o seu navegado não consgue reproduzir audio <a href="midia/infantil.mp3.mp3">clique aqui para baixar o arquivo em mp3</a></p>
+
+</body>
+</html>
